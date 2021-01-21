@@ -1,10 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import Header from "./components/ui/Header";
 import "./styles.css";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Breaking Bad API</h1>
+    <div className="container">
+      <Header />
     </div>
   );
-}
+};
+export default App;
