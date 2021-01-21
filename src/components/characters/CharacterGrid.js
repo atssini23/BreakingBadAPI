@@ -1,9 +1,9 @@
 import React from "react";
 import CharacterItem from "./CharacterItem";
 
-const CharcterGrid = ({ items, isLoading }) => {
+const CharacterGrid = ({ items, isLoading }) => {
   return isLoading ? (
-    <h1>Loading...</h1>
+    <h2>Loading...</h2>
   ) : (
     <section className="cards">
       {items.map((item) => (
@@ -12,4 +12,4 @@ const CharcterGrid = ({ items, isLoading }) => {
     </section>
   );
 };
-export default CharcterGrid;
+export default CharacterGrid;
