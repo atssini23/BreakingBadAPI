@@ -1,31 +1,24 @@
 import React from "react";
 
-const CharacterItem = ({ item }) => {
+const QueenItem = ({ item }) => {
   //console.log(item);
   return (
     <div className="card">
       <div className="card-inner">
         <div className="card-front">
-          <img src={item.img} alt="" />
+          <img src={item.image_url} alt="" />
         </div>
         <div className="card-back">
           <h1>{item.name}</h1>
           <ul>
             <li>
-              <strong>Actor Name: </strong>
-              {item.portrayed}
+              <strong>Quote: </strong> {item.quote}
             </li>
             <li>
-              <strong>Nickname: </strong>
-              {item.nickname}
+              <strong>Season: </strong>
             </li>
             <li>
-              <strong>Birthday: </strong>
-              {item.birthday}
-            </li>
-            <li>
-              <strong>Status: </strong>
-              {item.status}
+              <strong>Season Place: </strong>
             </li>
           </ul>
         </div>
@@ -33,4 +26,4 @@ const CharacterItem = ({ item }) => {
     </div>
   );
 };
-export default CharacterItem;
+export default QueenItem;

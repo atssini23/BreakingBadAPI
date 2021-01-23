@@ -6,13 +6,12 @@
 
 html,
 body {
-  background: rgb(32, 82, 34);
+  background: rgb(227, 13, 175);
   background: radial-gradient(
     circle,
-    rgb(39, 136, 42) 0%,
-    rgba(6, 14, 5, 1) 100%
+    rgba(227, 13, 175, 1) 0%,
+    rgba(148, 35, 164, 1) 100%
   );
-  /*background: #000 url("img/bg.jpg") no-repeat center center/cover;*/
   height: 100vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +30,7 @@ a {
 .btn {
   display: inline-block;
   color: #fff;
-  background-color: #3fb573;
+  background-color: #343635;
   font-size: 1em;
   text-align: center;
   padding: 10px 15px;
@@ -116,7 +115,7 @@ input[type="text"] {
 }
 
 .card-back {
-  background-color: #333;
+  background-color: rgb(18, 157, 199);
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
