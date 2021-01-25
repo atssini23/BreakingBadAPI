@@ -7,13 +7,14 @@ const Search = ({ getQuery }) => {
     setText(q);
     getQuery(q);
   };
+
   return (
     <section className="search">
       <form>
         <input
           type="text"
           className="form-control"
-          placeholder="Search Character"
+          placeholder="Search characters"
           value={text}
           onChange={(e) => onChange(e.target.value)}
           autoFocus
@@ -22,4 +23,5 @@ const Search = ({ getQuery }) => {
     </section>
   );
 };
+
 export default Search;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const QueenItem = ({ item }) => {
+const CharaterItem = ({ item }) => {
   //console.log(item);
   return (
     <div className="card">
@@ -29,4 +29,4 @@ const QueenItem = ({ item }) => {
     </div>
   );
 };
-export default QueenItem;
+export default CharaterItem;
