@@ -6,19 +6,22 @@ const QueenItem = ({ item }) => {
     <div className="card">
       <div className="card-inner">
         <div className="card-front">
-          <img src={item.image_url} alt="" />
+          <img src={item.img} alt="" />
         </div>
         <div className="card-back">
           <h1>{item.name}</h1>
           <ul>
             <li>
-              <strong>Quote: </strong> {item.quote}
+              <strong>Actor Name:</strong> {item.portrayed}
             </li>
             <li>
-              <strong>Season: </strong>
+              <strong>Nickname:</strong> {item.nickname}
             </li>
             <li>
-              <strong>Season Place: </strong>
+              <strong>Birthday:</strong> {item.birthday}
+            </li>
+            <li>
+              <strong>Status:</strong> {item.status}
             </li>
           </ul>
         </div>

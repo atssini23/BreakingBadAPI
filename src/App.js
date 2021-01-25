@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./components/ui/Header";
-import QueenGrid from "./components/queens/QueenGrid";
+import CharacterGrid from "./components/characters/CharacterGrid";
 import "./styles.css";
 
 const App = () => {
@@ -10,7 +10,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const result = await axios("https://www.nokeynoshade.party/api/queens");
+      const result = await axios(
+        "https://www.breakingbadapi.com/api/characters"
+      );
       console.log(result.data);
       setItems(result.data);
       setIsLoading(false);
@@ -21,7 +23,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <QueenGrid isLoading={isLoading} items={items} />
+      <CharacterGrid isLoading={isLoading} items={items} />
     </div>
   );
 };

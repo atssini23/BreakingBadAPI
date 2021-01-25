@@ -6,12 +6,8 @@
 
 html,
 body {
-  background: rgb(227, 13, 175);
-  background: radial-gradient(
-    circle,
-    rgba(227, 13, 175, 1) 0%,
-    rgba(148, 35, 164, 1) 100%
-  );
+  background: rgb(32, 39, 26);
+  background: radial-gradient(circle, rgb(21, 61, 25) 0%, rgb(6, 10, 7) 100%);
   height: 100vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -115,7 +111,7 @@ input[type="text"] {
 }
 
 .card-back {
-  background-color: rgb(18, 157, 199);
+  background-color: #343635;
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
